@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bale Home</title>
+</head>
+<body>
+    <h1>Welcome to the Bale</h1>
+
+<% for (const t of turtles) { %>
+    <h3>Name: <a href="/turtles/<%= t._id%>"> <%= t.name %></a></h3>
+    <a href="/turtles/edit/<%= t._id%>">Edit</a>
+    <a href="/delete/<%= t._id%>">Delete</a>
+    <hr>
+    <% } %>
+    
+    
+</body>
+</html>
